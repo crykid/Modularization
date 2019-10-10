@@ -1,0 +1,24 @@
+ext {
+
+    //主项目配置，有且只能有一个为true！！！，为true意味着该module作为启动module
+    launcher = [
+            app  : false,
+            login: true,
+            register:false
+    ]
+
+
+    android = [
+            compileSdkVersion: 28,
+            applicationId    : "com.margin.modularization",
+            minSdkVersion    : 15,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+    dependencies = [
+
+            support_v7      : "com.android.support:appcompat-v7:28.0.0",
+            constraintLayout: "com.android.support.constraint:constraint-layout:1.1.3"
+    ]
+}
