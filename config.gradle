@@ -1,10 +1,10 @@
 ext {
 
-    //主项目配置，有且只能有一个为true！！！，为true意味着该module作为启动module
+    libAsApplication = true
     launcher = [
-            app  : false,
-            login: true,
-            register:false
+            app     : true,
+            login   : true,
+            register: true
     ]
 
 

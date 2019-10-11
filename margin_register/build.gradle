@@ -18,7 +18,7 @@ android {
         versionName rootProject.ext.android.versionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        resourcePrefix "register_"
     }
 
     buildTypes {

@@ -1,2 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.margin.register" />
+    package="com.margin.register">
+
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity android:name=".RegisterActivity"
+            android:exported="true"/>
+    </application>
+</manifest>
