@@ -1,4 +1,4 @@
-package com.margin.modularization.base;
+package com.margin.base.base;
 
 import android.app.Application;
 import android.util.Log;
