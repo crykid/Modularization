@@ -1,4 +1,4 @@
-if (rootProject.launcher.login) {
+if (rootProject.libAsApplication) {
     apply plugin: 'com.android.application'
 } else {
     apply plugin: 'com.android.library'
@@ -9,7 +9,7 @@ android {
 
 
     defaultConfig {
-        if (rootProject.ext.launcher.login) {
+        if (rootProject.libAsApplication) {
             applicationId 'com.margin.login'
         }
         minSdkVersion rootProject.ext.android.minSdkVersion
@@ -31,7 +31,7 @@ android {
 
     sourceSets {
         main {
-            if (rootProject.launcher.login) {
+            if (rootProject.libAsApplication) {
                 manifest.srcFile 'src/main/debug/AndroidManifest.xml'
             } else {
                 manifest.srcFile 'src/main/release/AndroidManifest.xml'

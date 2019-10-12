@@ -1,11 +1,11 @@
 ext {
 
     libAsApplication = true
-    launcher = [
-            app     : true,
-            login   : true,
-            register: true
-    ]
+//    launcher = [
+//            app     : true,
+//            login   : true,
+//            register: true
+//    ]
 
 
     android = [
