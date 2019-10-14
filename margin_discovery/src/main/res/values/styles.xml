@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="discovery_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/discovery_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/discovery_colorPrimaryDark</item>
+        <item name="colorAccent">@color/discovery_colorAccent</item>
+    </style>
+
+</resources>

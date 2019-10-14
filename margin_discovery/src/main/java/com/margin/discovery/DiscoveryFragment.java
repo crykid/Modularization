@@ -1,8 +1,7 @@
-package com.margin.modularization.hometab;
+package com.margin.discovery;
 
 import android.os.Bundle;
 
-import com.margin.modularization.R;
 import com.margin.base.base.BaseFragment;
 
 /**
@@ -22,7 +21,7 @@ public class DiscoveryFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_discovery;
+        return R.layout.discovery_fragment_discovery;
     }
 
     @Override

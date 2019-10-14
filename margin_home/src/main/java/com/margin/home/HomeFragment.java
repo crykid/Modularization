@@ -1,9 +1,10 @@
-package com.margin.modularization.hometab;
+package com.margin.home;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
-import com.margin.modularization.R;
 import com.margin.base.base.BaseFragment;
+import com.margin.base.util.MarginUtils;
 
 /**
  * Created by : mr.lu
@@ -11,6 +12,8 @@ import com.margin.base.base.BaseFragment;
  * Description:
  */
 public class HomeFragment extends BaseFragment {
+
+    TextView hello;
 
     public static HomeFragment create() {
 
@@ -22,11 +25,12 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_home;
+        return R.layout.home_fragment_home;
     }
 
     @Override
     protected void onBindView(Bundle savedInstanceState) {
+        hello = mRootView.findViewById(R.id.tv_home_hello);
 
     }
 }

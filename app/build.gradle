@@ -26,10 +26,14 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    if (!rootProject.libAsApplication) {
+        implementation project(":margin_base")
+    if (rootProject.libAsApplication) {
+
+    } else {
         implementation project(":margin_login")
         implementation project(":margin_register")
-    } else {
-        implementation project(":margin_base")
+        implementation project(":margin_home")
+        implementation project(":margin_discovery")
     }
+
 }

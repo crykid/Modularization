@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/margin_base" />
             <option value="$PROJECT_DIR$/margin_common" />
+            <option value="$PROJECT_DIR$/margin_discovery" />
+            <option value="$PROJECT_DIR$/margin_home" />
             <option value="$PROJECT_DIR$/margin_login" />
             <option value="$PROJECT_DIR$/margin_register" />
           </set>

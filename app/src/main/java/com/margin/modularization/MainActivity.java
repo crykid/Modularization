@@ -12,8 +12,8 @@ import android.widget.RadioGroup;
 
 import com.margin.base.base.BaseActivity;
 import com.margin.base.base.BaseFragment;
-import com.margin.modularization.hometab.DiscoveryFragment;
-import com.margin.modularization.hometab.HomeFragment;
+import com.margin.discovery.DiscoveryFragment;
+import com.margin.home.HomeFragment;
 import com.margin.modularization.hometab.SettingFragment;
 
 

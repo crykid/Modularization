@@ -15,16 +15,19 @@ import android.view.ViewGroup;
  */
 public abstract class BaseFragment extends Fragment {
 
+
+
+    protected  View mRootView;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = null;
+
         if (getLayoutId() > 0) {
-            view = inflater.inflate(getLayoutId(), container, false);
+            mRootView = inflater.inflate(getLayoutId(), container, false);
         }
         onBindView(savedInstanceState);
-        return view;
+        return mRootView;
     }
 
     protected abstract int getLayoutId();
