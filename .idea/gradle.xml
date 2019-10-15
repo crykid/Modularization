@@ -15,9 +15,11 @@
             <option value="$PROJECT_DIR$/margin_home" />
             <option value="$PROJECT_DIR$/margin_login" />
             <option value="$PROJECT_DIR$/margin_register" />
+            <option value="$PROJECT_DIR$/margin_setting" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
       </GradleProjectSettings>
     </option>
   </component>

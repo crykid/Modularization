@@ -14,7 +14,7 @@ import com.margin.base.base.BaseActivity;
 import com.margin.base.base.BaseFragment;
 import com.margin.discovery.DiscoveryFragment;
 import com.margin.home.HomeFragment;
-import com.margin.modularization.hometab.SettingFragment;
+import com.margin.setting.SettingFragment;
 
 
 public class MainActivity extends BaseActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
@@ -27,7 +27,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     HomeFragment homeFragment;
     DiscoveryFragment discoveryFragment;
     SettingFragment settingFragment;
-
 
 
     @Override
@@ -57,18 +56,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     @Override
     public void onClick(View v) {
 
-    }
-
-
-    public void go2ActivityForName(String packageName) {
-        try {
-            Class aClass = Class.forName(packageName);
-            Intent intent = new Intent(this, aClass);
-            intent.putExtra("intent_info_hello", "from home");
-            startActivity(intent);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
     }
 
 
@@ -111,4 +98,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 break;
         }
     }
+
+
 }

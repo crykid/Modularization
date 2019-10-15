@@ -3,6 +3,7 @@
     package="com.margin.modularization">
 
     <application
+
         android:allowBackup="true"
         android:name="com.margin.base.base.MyApplication"
         android:icon="@mipmap/ic_launcher"

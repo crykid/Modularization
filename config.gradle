@@ -1,6 +1,6 @@
 ext {
     //模块是否单独运行，true-module作为app，false-module作为library
-    libAsApplication = true
+    libAsApplication = false
 //    launcher = [
 //            app     : true,
 //            login   : true,

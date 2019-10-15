@@ -1,8 +1,12 @@
 apply plugin: 'com.android.library'
-
+//butterknife
+//apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion rootProject.android.compileSdkVersion
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
@@ -31,4 +35,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //activityrouter配置--1，compiler还需要在具体module里添加
+    api 'com.github.mzule.activityrouter:activityrouter:1.2.2'
+    annotationProcessor 'com.github.mzule.activityrouter:compiler:1.1.7'
+
+    //EventBus
+    api 'org.greenrobot:eventbus:3.1.1'
+
+    //butterknfei
+//    implementation 'com.jakewharton:butterknife:10.2.0'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
 }

@@ -1,1 +1,3 @@
-include ':app', ':margin_login', ':margin_register', ':margin_base', ':margin_common', ':margin_home', ':margin_discovery'
+include ':app'
+include ':margin_common', ':margin_base'
+include ':margin_login', ':margin_register', ':margin_home', ':margin_setting', ':margin_discovery'
